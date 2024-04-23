@@ -9,4 +9,4 @@ class Reserva {
  }
 } 
 
- 
+ console.log(Reserva)
