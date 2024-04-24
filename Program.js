@@ -11,7 +11,7 @@ let reser1 = new Reserva()
 reser1.Destino =`Cartagena`
 reser1.Costo =250000
 reser1.Impuesto = readlineSync.question(`Cuanto es el impuesto para ${reser1.Destino}`)
-reser1.NombrePasajero `Juan`
+reser1.NombrePasajero = `Juan`
  
 let reser2 = new Reserva()
 reser2.Destino =`Miami`
