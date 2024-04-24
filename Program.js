@@ -17,12 +17,12 @@ let reser2 = new Reserva()
 reser2.Destino =`Miami`
 reser2.Costo =700000
 reser2.Impuesto = readlineSync.question(`Cuanto es el impuesto para ${reser2.Destino}`)
-reser2.NombrePasajero `Camila`
+reser2.NombrePasajero = `Camila`
 
 let reser3 = new Reserva()
 reser3.Destino =`Alemania`
 reser3.Costo =2000000
 reser3.Impuesto = readlineSync.question(`Cuanto es el impuesto para ${reser3.Destino}`)
-reser3.NombrePasajero `Montoya`
+reser3.NombrePasajero =`Montoya`
 
 console.log(reser1)
