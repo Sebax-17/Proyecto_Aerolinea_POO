@@ -8,6 +8,7 @@ class Reserva {
     Origen = ``
 
 } 
+console.log(this.Impuesto)
 let reser1 = new Reserva()
 reser1.Origen = readlineSync.question(`Desde que ciudad o pais van a viajar? `)
 reser1.Destino =`Cartagena`
