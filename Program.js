@@ -3,8 +3,8 @@ class Reserva {
     
     Destino=``;
     NombrePasajero = ``
-    Costo = 0
-    Impuesto = 0
+    Costo = null
+    Impuesto = null
     Origen = ``
 
 } 
@@ -20,7 +20,7 @@ let reser2 = new Reserva()
 reser2.Origen = readlineSync.question(`Desde que ciudad o pais van a viajar? `)
 reser2.Destino =`Miami`
 reser2.Impuesto = +readlineSync.question(`Cuanto es el impuesto para ${reser2.Destino  }: `)
-reser2.Costo = 700000 + (reser2.Costo*this.Impuesto)
+reser2.Costo = 700000 
 reser2.NombrePasajero = `Camila`
 
 let reser3 = new Reserva()
