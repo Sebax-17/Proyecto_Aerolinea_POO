@@ -13,4 +13,4 @@ class Vuelo {
 let vuelo1 = new Vuelo(`Bogota`,`Miami`,250000,15)
 vuelo1.preciototal()
 console.log(vuelo1)
-console.log(vuelo1.preciototal)
+console.log(vuelo1.preciototal())
