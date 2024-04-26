@@ -25,7 +25,7 @@ class Reserva extends Vuelo {
     }
     else if (this.tipodePasajero == `infante`){
         this.dulce += 1 
-        console.log(dulce)
+        console.log(this.dulce)
     }
 
     if (this.VueloDescuesto == `si`){
