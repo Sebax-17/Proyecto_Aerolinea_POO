@@ -12,6 +12,10 @@ class Vuelo {
 }
 class Pasajero  {
     dulce = 0
+    nombre = ``
+    edad = 0
+    tipodepasajero = ``
+
     construtor(nombre,edad,tipodepasajero,vuelo){
         this.nombre = nombre
         this.edad = edad
@@ -28,5 +32,5 @@ class Pasajero  {
         }
     }
 }
-let reser1 = new Pasajero();
+let reser1 = new Pasajero()
 console.log(reser1)
