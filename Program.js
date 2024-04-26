@@ -20,6 +20,7 @@ class Reserva extends Vuelo {
   extras(){
     if(this.tipodePasajero == `mascota`){
         return this.costo + (this.costo*0.15)
+        console.log(`Los descuentos en total son ${ this.costo*0.15}`) 
 
     }
     else if (this.tipodePasajero == `infante`){
@@ -38,4 +39,4 @@ let
  reser1.extras()
 vuelo1.preciototal()
 console.log(`EL PRECIO TOTAL CON IMPUESTO ES DE: ${vuelo1.preciototal()}`)
-console.log(reser1.extras())
+console.log(`El precio total con descuento del 10% ${reser1.extras()}`)
