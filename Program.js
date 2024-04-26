@@ -11,9 +11,9 @@ class Vuelo {
     }
 }
 class Reserva extends Vuelo {
-  constructor(tipodePasajero,VueloDescuesto){
-     const tipodePasajero = tipodePasajero
-     const VueloDescuesto = VueloDescuesto
+  constructor(TipodePasajero,VueloDescuesto){
+    this.TipodePasajero = TipodePasajero
+    this.VueloDescuesto = VueloDescuesto
   }
   extras(){
     if(this.tipodePasajero == `mascota`){
