@@ -14,7 +14,7 @@ class Aerolinea {
     }
     Dulces(){
         console.info(`Los dulces solo son para niños menores de 12 años`)
-        CanDeNIños= +readlineSync.question(`Cuantos niños infantes van a ir `)
+        CanDeNIños = +readlineSync.question(`Cuantos niños infantes van a ir `)
         while (CanDeNIños > Dulces){
             this.DulcesEntregadosaNiños += 1
         }
