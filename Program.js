@@ -10,23 +10,6 @@ class Vuelo {
         Precio = this.costo +(this.costo*this.impuesto)/100
     }
 }
-class Pasajero  {
-    dulce = 0
-    nombre = ``
-    edad = 0
-    tipodepasajero = ``
-
-    construtor(nombre,edad,tipodepasajero,vuelo){
-        PrecioPasaje()
-        if(this.tipodepasajero == `mascota`){
-            this.costo = this.costo * 0.15
-        }
-        else if(this.tipodepasajero == `infante`) {
-            dulce += dulce + 1
-        }
-    }
-
-}
-
-let reser1 = new Pasajero()
-console.log(reser1)
+let vuelo1 = new Vuelo(`Bogota`,`Miami`,250000,15)
+vuelo1.preciototal()
+console.log(vuelo1)
