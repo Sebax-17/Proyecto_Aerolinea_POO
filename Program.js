@@ -17,10 +17,7 @@ class Pasajero  {
     tipodepasajero = ``
 
     construtor(nombre,edad,tipodepasajero,vuelo){
-        
-
-    
-    PrecioPasaje()
+        PrecioPasaje()
         if(this.tipodepasajero == `mascota`){
             this.costo = this.costo * 0.15
         }
