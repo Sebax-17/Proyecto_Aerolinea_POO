@@ -11,9 +11,11 @@ class Vuelo {
     }
 }
 class Reserva extends Vuelo {
-  constructor(TipodePasajero,VueloDescuesto){
+  constructor(Origen,Destino,costo,impuesto,TipodePasajero,VueloDescuesto){
+    super(`Bogota`,`Miami`,250000,15)
     this.TipodePasajero = TipodePasajero
     this.VueloDescuesto = VueloDescuesto
+    
   }
   extras(){
     if(this.tipodePasajero == `mascota`){
