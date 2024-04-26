@@ -44,5 +44,5 @@ class Reserva extends Aerolinea{
    }
    constructor(Origen,Destino,Costo,DulcesEntregadosaNiños){}
 }
-let reser1 = new Reserva()
+let reser1 = new Reserva(`Manizales`,`B`,250000,1)
 console.log(reser1)
