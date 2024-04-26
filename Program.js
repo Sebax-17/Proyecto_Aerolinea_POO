@@ -10,7 +10,28 @@ class Vuelo {
         return this.costo +(this.costo*this.impuesto)/100
     }
 }
-let vuelo1 = new Vuelo(`Bogota`,`Miami`,250000,15)
+class Reserva extends Vuelo {
+  constructor(tipodePasajero,VueloDescuesto){
+    this.VueloDescuesto= VueloDescuesto
+    this.tipodePasajero= tipodePasajero
+  }
+  extras(){
+    if(this.tipodePasajero == `mascota`){
+        return this.costo + (this.costo*0.15)
+
+    }
+    else if (this.tipodePasajero == `infante`){
+        this.dulce += 1 
+    }
+
+    if (this.VueloDescuesto == `si`){
+        return this.costo - (this.costo*0.1)
+    }
+
+  }
+}
+let 
+ vuelo1 = new Vuelo(`Bogota`,`Miami`,250000,15)
 vuelo1.preciototal()
 console.log(vuelo1)
-console.log(vuelo1.preciototal())
+console.log(`EL PRECIO TOTAL CON IMPUESTO ES DE: ${vuelo1.preciototal()}`)
