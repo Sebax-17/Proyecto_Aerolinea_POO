@@ -42,7 +42,7 @@ class Reserva extends Aerolinea{
    CostoTotal(){
     CostoFinal = this.costo + (this.Impuesto/100)
    }
-   constructor(Origen,Destino,Costo,DulcesEntregadosaNiños){}
+   
 }
-let reser1 = new Reserva(`Manizales`,`B`,250000,1)
+let reser1 = new Reserva()
 console.log(reser1)
