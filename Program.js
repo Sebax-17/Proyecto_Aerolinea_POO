@@ -1,10 +1,9 @@
 const readlineSync = require(`readline-sync`)
 class Aerolinea {
-    Vuelo = ``
     Impuesto = 0 // es segun el destino Por ejemplo si es para san andres tiene un impuesto de x y por otro vuelo es de y
-    ImpNiños = 0
+    DulcesEntregadosaNiños = 0
     
-    Descuentos = 0.1
+    #Descuentos = 0.1
     ImpDescuento = 0
     //Metodo
     ImpuestoMascota(){
@@ -13,11 +12,37 @@ class Aerolinea {
         ImpTotalMascotas = CanMascotas*(ImPMascota/100)
         console.log(`El impuesto total por llevar mascotas es: ${ImpTotalMascotas}`)
     }
-
+    Dulces(){
+        console.info(`Los dulces solo son para niños menores de 12 años`)
+        CanDeNIños =+readlineSync.question(`Cuantos niños infantes van a ir `)
+        while (CanDeNIños > Dulces){
+            this.DulcesEntregadosaNiños += 1++ 
+        }
+    }
 } 
 class Reserva extends Aerolinea{
     Origen = ``
     Destino = ``
+
+    Menu(){
+        console.log(`------ Destinos Disponibles -------`)
+        this.Destino = readlineSync.question(`Bogota(B) , Miami(M , Pereira(P))  `)
+
+    }
+    CostoVuelo(){
+        this.costo = +readlineSync.question(`Cual es valor del vuelo, ${this.Destino}`)
+        
+    }
+   ImpuestoDestino(Destino){
     
+    this.Impuesto= +readlineSync.question(`Ingrese el impuesto de ${Destino}`)
+     
+
+   } 
+   CostoTotal(){
+    CostoFinal = this.costo + (this.Impuesto/100)
+   }
+   constructor(Menu,ImpuestoDestino,CostoVuelo,Dulces){}
 }
-console.log(ImpuestoMascota)
+let reser1 = new Reserva(`B`,15,250000,2)
+console.log(reser1)
