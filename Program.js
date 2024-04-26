@@ -2,7 +2,7 @@ const readlineSync = require(`readline-sync`)
 class Aerolinea {
     Impuesto = 0 // es segun el destino Por ejemplo si es para san andres tiene un impuesto de x y por otro vuelo es de y
     DulcesEntregadosaNiños = 0
-    
+    CanDeNIños = 0
     #Descuentos = 0.1
     ImpDescuento = 0
     //Metodo
@@ -14,7 +14,7 @@ class Aerolinea {
     }
     Dulces(){
         console.info(`Los dulces solo son para niños menores de 12 años`)
-        CanDeNIños = +readlineSync.question(`Cuantos niños infantes van a ir `)
+        CanDeNIños = readlineSync.question(`Cuantos niños infantes van a ir `)
         while (CanDeNIños > Dulces){
             this.DulcesEntregadosaNiños += 1
         }
