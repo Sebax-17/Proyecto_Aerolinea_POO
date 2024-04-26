@@ -19,12 +19,13 @@ class Reserva extends Vuelo {
   }
   extras(){
     if(this.tipodePasajero == `mascota`){
-        return this.costo + (this.costo*0.15)
-        console.log(`Los descuentos en total son ${ this.costo*0.15}`) 
+        return+ this.costo + (this.costo*0.15)
+        
 
     }
     else if (this.tipodePasajero == `infante`){
         this.dulce += 1 
+        console.log(dulce)
     }
 
     if (this.VueloDescuesto == `si`){
