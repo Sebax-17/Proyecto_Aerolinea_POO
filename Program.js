@@ -7,7 +7,7 @@ class Vuelo {
     this.impuesto = impuesto
     }
     preciototal(){
-        Precio = this.costo +(this.costo*this.impuesto)/100
+        return this.costo +(this.costo*this.impuesto)/100
     }
 }
 let vuelo1 = new Vuelo(`Bogota`,`Miami`,250000,15)
