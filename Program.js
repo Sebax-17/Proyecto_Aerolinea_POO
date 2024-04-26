@@ -34,7 +34,7 @@ class Reserva extends Vuelo {
 }
 let 
  vuelo1 = new Vuelo(`Bogota`,`Miami`,250000,15)
- let reser1 = new Reserva(`infante`,`si`)
+ let reser1 = new Reserva(`Bogota`,`Miami`,250000,15,`mascota`,`si`)
  reser1.extras()
 vuelo1.preciototal()
 console.log(`EL PRECIO TOTAL CON IMPUESTO ES DE: ${vuelo1.preciototal()}`)
