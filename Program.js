@@ -20,4 +20,4 @@ class Reserva extends Aerolinea{
     Destino = ``
     
 }
-this.ImpuestoMascota()
+ImpuestoMascota()
