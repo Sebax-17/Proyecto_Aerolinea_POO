@@ -17,13 +17,10 @@ class Pasajero  {
     tipodepasajero = ``
 
     construtor(nombre,edad,tipodepasajero,vuelo){
-        this.nombre = nombre
-        this.edad = edad
-        this.tipodepasajero = tipodepasajero
-        this.vuelo = vuelo
+        
 
-    }
-    PrecioPasaje(){
+    
+    PrecioPasaje()
         if(this.tipodepasajero == `mascota`){
             this.costo = this.costo * 0.15
         }
@@ -31,6 +28,8 @@ class Pasajero  {
             dulce += dulce + 1
         }
     }
+
 }
+
 let reser1 = new Pasajero()
 console.log(reser1)
