@@ -20,4 +20,4 @@ class Reserva extends Aerolinea{
     Destino = ``
     
 }
-ImpuestoMascota()
+console.log(ImpuestoMascota)
