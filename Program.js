@@ -46,6 +46,6 @@ class Reserva extends Aerolinea{
 }
 let reser1 = new Reserva()
 console.log(reser1)
-reser1.Destino()
+reser1.Menu()
 reser1.Dulces()
 reser1.ImpuestoDestino()
