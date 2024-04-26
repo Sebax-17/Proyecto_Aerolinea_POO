@@ -12,7 +12,6 @@ class Vuelo {
 }
 class Reserva extends Vuelo {
   constructor(tipodePasajero,VueloDescuesto){
-    
     this.tipodePasajero = tipodePasajero
     this.VueloDescuesto = VueloDescuesto
   }
@@ -36,6 +35,5 @@ let
  let reser1 = new Reserva(`mascota`,`si`)
  reser1.extras()
 vuelo1.preciototal()
-console.log(vuelo1)
 console.log(`EL PRECIO TOTAL CON IMPUESTO ES DE: ${vuelo1.preciototal()}`)
 console.log(reser1.extras)
