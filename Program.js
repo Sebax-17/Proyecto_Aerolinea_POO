@@ -12,6 +12,7 @@ class Vuelo {
 }
 class Reserva extends Vuelo {
   constructor(tipodePasajero,VueloDescuesto){
+    
     this.tipodePasajero = tipodePasajero
     this.VueloDescuesto = VueloDescuesto
   }
