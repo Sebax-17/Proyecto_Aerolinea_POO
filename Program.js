@@ -38,4 +38,4 @@ let
  reser1.extras()
 vuelo1.preciototal()
 console.log(`EL PRECIO TOTAL CON IMPUESTO ES DE: ${vuelo1.preciototal()}`)
-console.log(reser1.extras)
+console.log(reser1.extras())
