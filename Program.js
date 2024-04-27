@@ -71,9 +71,9 @@ class Vuelo {
   // Agregar más vuelos, mascotas e infantes según sea necesario
   
   // Consultas
-  console.log(Total recaudado por venta de tiquetes: ${aerolinea.totalRecaudado});
-  console.log(Destino preferido: ${aerolinea.destinoPreferido()});
-  console.log(Dinero recaudado por transporte de mascotas: ${aerolinea.dineroPorMascotas});
-  console.log(Total de impuestos para San Andrés: ${aerolinea.calcularImpuestoDestino('San Andrés')});
-  console.log(Infantes que han viajado: ${aerolinea.infantesViajados});
-  console.log(Costo total de dulces para infantes: ${aerolinea.costoDulces});
+  console.log(`Total recaudado por venta de tiquetes: ${aerolinea.totalRecaudado}`);
+  console.log(`Destino preferido: ${aerolinea.destinoPreferido()}`);
+  console.log(`Dinero recaudado por transporte de mascotas: ${aerolinea.dineroPorMascotas}`);
+  console.log(`Total de impuestos para San Andrés: ${aerolinea.calcularImpuestoDestino('San Andrés')}`);
+  console.log(`Infantes que han viajado: ${aerolinea.infantesViajados}`);
+  console.log(`Costo total de dulces para infantes: ${aerolinea.costoDulces}`);
