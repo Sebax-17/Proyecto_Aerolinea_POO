@@ -7,7 +7,7 @@ class Vuelo {
     this.impuesto = impuesto
     }
     preciototal(){
-        return this.costo +(this.costo*this.impuesto)/100
+        precio =this.costo +(this.costo*this.impuesto)/100
     }
 }
 class Reserva extends Vuelo {
@@ -19,7 +19,9 @@ class Reserva extends Vuelo {
   }
   extras(){
     if(this.tipodePasajero == `mascota`){
-        return+ this.costo + (this.costo*0.15)
+        ImpMascota += (this.costo*0.15)
+        precio =this.costo + ImpMascota
+
         
 
     }
@@ -29,7 +31,7 @@ class Reserva extends Vuelo {
     }
 
     if (this.VueloDescuesto == `si`){
-        return this.costo - (this.costo*0.1)
+        VueloconDescuento= this.costo - (this.costo*0.1)
     }
 
   }
@@ -41,3 +43,4 @@ let
 vuelo1.preciototal()
 console.log(`EL PRECIO TOTAL CON IMPUESTO ES DE: ${vuelo1.preciototal()}`)
 console.log(`El precio total con descuento del 10% ${reser1.extras()}`)
+console.log(precio)
