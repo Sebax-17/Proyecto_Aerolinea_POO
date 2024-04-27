@@ -31,7 +31,7 @@ class Reserva extends Vuelo {
     }
 
     if (this.VueloDescuesto == `si`){
-        VueloconDescuento= this.costo - (this.costo*0.1)
+       PrecioconDescuento = this.costo-(this.costo*0.1)
     }
 
   }
